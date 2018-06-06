@@ -1,0 +1,15 @@
+{{each result}}
+<li>
+    <img src="http://localhost:3000/uploads/{{$value.companyLogo}}">
+    <div>
+        <h2>{{$value.companyName}}</h2>
+        <p>
+            <span>
+                {{$value.positionName}}
+            </span>
+            <span>{{$value.positionSalary}}</span>
+        </p>
+        <p>{{$value.createTime}}</p>
+    </div>
+</li>
+{{/each}}
